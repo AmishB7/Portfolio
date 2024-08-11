@@ -4,7 +4,7 @@
         <div class="project-card" v-for="(items,index) in projectData.projects" v-bind:key="items">
         <h2>{{projectData.projects[index].name}}</h2>
         <p>{{projectData.projects[index].description}}</p>
-        <div class="link"><a :href="projectData.projects[index].link1" target="_blank"><img src="../assets/facebook.png" alt="project"></a></div>
+        <div class="link"><a :href="projectData.projects[index].link1" target="_blank"><img src="../assets/github.png" alt="project"></a></div>
         
 
     </div>

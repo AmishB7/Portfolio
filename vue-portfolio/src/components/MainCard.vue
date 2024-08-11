@@ -1,4 +1,15 @@
-import projectCard from './projectCard.vue';
+<script>
+import { ViFileTypeNode } from "oh-vue-icons/icons";
+import { addIcons, OhVueIcon } from "oh-vue-icons";
+
+addIcons(ViFileTypeNode);
+
+export default {
+  components: {
+    'v-icon': OhVueIcon
+  }
+}
+</script>
 <template>
     <div class="wrapper">
         <div class="main-container">
@@ -11,37 +22,47 @@ import projectCard from './projectCard.vue';
             <div class="social-links">
                 <a href="">
                     <div class="link">
-                        <img src="../assets/Github.png" alt="">
-                        <a href=""><h2>Github</h2></a>
+                        
+                        <a href="https://github.com/AmishB7" target="_blank"><img src="../assets/Github.png" alt=""><h2>Github</h2></a>
                         
                     </div>
                     <div class="link">
-                        <img src="../assets/linkedin.png" alt="">
-                        <a href=""><h2>Linkedin</h2></a>
+                        
+                        <a href="https://www.linkedin.com/in/amish-bajracharya-349625286/" target="_blank"><img src="../assets/linkedin.png" alt=""><h2>Linkedin</h2></a>
                     </div>
                     <div class="link">
-                        <img src="../assets/facebook.png" alt="">
-                        <a href=""><h2>Facebook</h2></a>
+                        
+                        <a href="https://www.facebook.com/amish.shakyaa/" target="_blank"><img src="../assets/facebook.png" alt=""><h2>Facebook</h2></a>
                     </div>
                     <div class="link">
-                        <img src="../assets/gmail.jpg" alt="">
-                        <a href=""><h2>Email</h2></a>
+                        
+                        <a href="mailto:amishbs43@gmail.com" target="_blank"><img src="../assets/gmail.jpg" alt=""><h2>Email</h2></a>
                     </div>
                 </a>
             </div>
         </div>
         <div class="container-two">
             <div class="about-me">
-                <h1>Hey, I am a software<br> developer</h1>
-                <p>I can help you solve a problem or build a product, <br> or website.</p>
-                <p>
-                    Let's chat <a href="mailto:amishbs43@gmail.com">amishbs43@gmail.com</a>
+                <h1>Hello! I am Amish, a software developer based in Nepal.
+                     
+                </h1>
+                <p>I am currently working at BeamLab with Node.js  
+                    and Vue.js. 
+                    I am <br> interested in creating full stack web applications. </p>
+                <p>I can help you solve a problem or build a product, website.</p>
+                <div class="mail">
+                    <p>
+                    Let's chat <a href="mailto:amishbs43@gmail.com" target="_blank">amishbs43@gmail.com</a>
                 </p>
+                </div>
             </div>
             <div class="skill-section">
                 <h1>Skills</h1>
+                <p><v-icon name="ViFileTypeNode" scale="1.5"/></p>
                 <class class="logo">
-                    <img src="../assets/skills.png" alt="">
+                    <p>
+
+                    </p>
                 </class>
             </div>
             <div class="button-container">
@@ -52,7 +73,7 @@ import projectCard from './projectCard.vue';
                 </div>
                 <div class="projects-button">
                     <a href="">
-                        <h2>My Resume</h2>
+                        <h2>See my Resume</h2>
                     </a>
                 </div>
             </div>
@@ -62,13 +83,6 @@ import projectCard from './projectCard.vue';
 
 </div>
 </template>    
-<script>
-import router from '@/router';
-
-export default {
-
-}
-</script>
 
 <style scoped >
 .wrapper {
@@ -96,7 +110,22 @@ export default {
     width: 200px;
     border-radius: 50%;
 }
+.profile p{
+    color: rgb(10, 1, 1);
+}
 
+.about-me h1{
+    color: #3BBA9C;
+}
+
+.about-me p{
+    color: #707793;
+}
+
+.mail a{
+    text-decoration: none;
+    color: #3BBA9C;
+}
 .link a{
     text-decoration: none;
     color: #2c3e50;
@@ -117,6 +146,12 @@ export default {
     height: 2.5rem;
 }
 
+.skill-section{
+    
+    color: #d6d6d6;
+    padding-top: 2px;
+    border-radius: 25px;
+}
 .button-container{
     margin-top: 5%;
     display: flex;
@@ -133,5 +168,10 @@ export default {
 .projects-button a{
     text-decoration: none;
     color: #fff
+}
+
+.skill-section v-icon {
+  background-color: #fff;
+  margin-right: 10px;
 }
 </style>
