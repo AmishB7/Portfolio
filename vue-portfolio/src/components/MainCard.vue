@@ -1,5 +1,7 @@
+import projectCard from './projectCard.vue';
 <template>
-    <div class="main-container">
+    <div class="wrapper">
+        <div class="main-container">
         <div class="container-one">
             <div class="profile">
                 <img src="../assets/profile.jpg" alt="Profile-image">
@@ -30,8 +32,11 @@
         </div>
         <div class="container-two">
             <div class="about-me">
-                <h1>About Me</h1>
-                <p>I am an undergraduate student pursuing Computer Science.</p>
+                <h1>Hey, I am a software<br> developer</h1>
+                <p>I can help you solve a problem or build a product, <br> or website.</p>
+                <p>
+                    Let's chat <a href="mailto:amishbs43@gmail.com">amishbs43@gmail.com</a>
+                </p>
             </div>
             <div class="skill-section">
                 <h1>Skills</h1>
@@ -41,9 +46,9 @@
             </div>
             <div class="button-container">
                 <div class="projects-button">
-                    <a href="">
-                        <h2>Projects</h2>
-                    </a>
+                    <router-link to="/projects">
+                        <h2>My Projects</h2>
+                    </router-link>
                 </div>
                 <div class="projects-button">
                     <a href="">
@@ -54,25 +59,34 @@
         </div>
     </div>
 
-</template>
 
+</div>
+</template>    
 <script>
+import router from '@/router';
+
 export default {
 
 }
 </script>
 
 <style scoped >
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
 
 .main-container {
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
-    background-color: #cecece;
+    background-color: #2E3047;
     border-radius: 25px;
+    width: 60%;
 }
 
 .container-one {
-    background-color: #a15a5a;
+    background-color: #1292EE;
     width: 30%;
     padding: 2.5%;
     border-radius: 25px;
@@ -93,7 +107,6 @@ export default {
     height: 2rem;
 }
 .container-two{
-    background-color: #866969;
     margin: 2.5%;
     width: 70%;
 }
@@ -111,7 +124,7 @@ export default {
     justify-content: center;
 }
 .projects-button{
-    background-color: #6b5aa1;
+    background-color: #005CA4;
     border-radius: 15px;
     padding: 5px;
     margin: 5px;
