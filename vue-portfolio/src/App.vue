@@ -10,5 +10,12 @@ export default {
 }
 </script>
 
-<style scoped>
+<style >
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #43455C;
+}
+
 </style>

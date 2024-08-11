@@ -86,7 +86,7 @@ export default {
 }
 
 .container-one {
-    background-color: #1292EE;
+    background-color: #707793;
     width: 30%;
     padding: 2.5%;
     border-radius: 25px;
