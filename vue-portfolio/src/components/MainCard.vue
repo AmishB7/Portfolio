@@ -17,7 +17,7 @@ export default {
             <div class="profile">
                 <img src="../assets/profile.jpg" alt="Profile-image">
                 <h3>Amish Bajracharya</h3>
-                <p>Software Developer</p>
+                <p>Contact Me</p>
             </div>
             <div class="social-links">
                 <a href="">
@@ -43,12 +43,13 @@ export default {
         </div>
         <div class="container-two">
             <div class="about-me">
-                <h1>Hello! I am Amish, a software developer based in Nepal.
+                <h1> <div class="highlight">Hello! I am Amish,</div>a software developer
+                    
                      
                 </h1>
                 <p>I am currently working at BeamLab with Node.js  
                     and Vue.js. 
-                    I am <br> interested in creating full stack web applications. </p>
+                    I am interested in creating full stack web applications. </p>
                 <p>I can help you solve a problem or build a product, website.</p>
                 <div class="mail">
                     <p>
@@ -56,26 +57,17 @@ export default {
                 </p>
                 </div>
             </div>
-            <div class="skill-section">
-                <h1>Skills</h1>
-                <p><v-icon name="ViFileTypeNode" scale="1.5"/></p>
-                <class class="logo">
-                    <p>
-
-                    </p>
-                </class>
-            </div>
             <div class="button-container">
-                <div class="projects-button">
+                <button class="projects-button">
                     <router-link to="/projects">
                         <h2>My Projects</h2>
                     </router-link>
-                </div>
-                <div class="projects-button">
+                </button>
+                <button class="projects-button">
                     <a href="">
                         <h2>See my Resume</h2>
                     </a>
-                </div>
+                </button>
             </div>
         </div>
     </div>
@@ -91,19 +83,19 @@ export default {
 }
 
 .main-container {
-    margin-top: 5%;
     display: flex;
     flex-direction: row;
-    background-color: #2E3047;
+    background-color: #2C3E50;
     border-radius: 25px;
-    width: 60%;
+    width: 80%;
 }
 
 .container-one {
-    background-color: #707793;
+    background-color: #E1D9D1;
     width: 30%;
     padding: 2.5%;
-    border-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 }
 .profile img{
     height: 200px;
@@ -111,25 +103,51 @@ export default {
     border-radius: 50%;
 }
 .profile p{
-    color: rgb(10, 1, 1);
+    color: #2c3e50;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 20px;
 }
 
 .about-me h1{
-    color: #3BBA9C;
+    font-size: 30px;
+    --bg-size: 300%;
+  /* Other */
+  --color-one: #18BC9C;
+  --color-two: #189ebc;
+  --color-three: #0cecce;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-three),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 120%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: move-bg 15s infinite linear;
+}
+
+@keyframes move-bg {
+  to { background-position: var(--bg-size) 0;
+  }
 }
 
 .about-me p{
-    color: #707793;
+    color: #EDEADE;
+    font-size: 20px;
 }
 
 .mail a{
     text-decoration: none;
-    color: #3BBA9C;
+    color: #3BA9AC;
 }
 .link a{
     text-decoration: none;
     color: #2c3e50;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .link img{
@@ -145,13 +163,6 @@ export default {
 .logo img{
     height: 2.5rem;
 }
-
-.skill-section{
-    
-    color: #d6d6d6;
-    padding-top: 2px;
-    border-radius: 25px;
-}
 .button-container{
     margin-top: 5%;
     display: flex;
@@ -159,7 +170,7 @@ export default {
     justify-content: center;
 }
 .projects-button{
-    background-color: #005CA4;
+    background-color: #18BC9C;
     border-radius: 15px;
     padding: 5px;
     margin: 5px;
@@ -167,11 +178,11 @@ export default {
 }
 .projects-button a{
     text-decoration: none;
-    color: #fff
+    color: #ECF0F1
 }
 
-.skill-section v-icon {
-  background-color: #fff;
-  margin-right: 10px;
+.highlight{
+    font-size: 50px;
 }
+
 </style>
