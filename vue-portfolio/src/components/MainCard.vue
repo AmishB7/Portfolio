@@ -152,8 +152,11 @@ export default {
     transform: scale(1.1); 
     filter: brightness(1.3); 
 }
+.highlight{
+    font-size: 40px;
+}
 .about-me h1{
-    font-size: 26px;
+    font-size: 35px;
     --bg-size: 300%;
   /* Other */
   --color-one: #18BC9C;
@@ -181,7 +184,7 @@ export default {
 
 .about-me p{
     color: #EDEADE;
-    font-size: 16px;
+    font-size: 18px;
     font-family: proxima-nova, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -235,9 +238,7 @@ export default {
     font-family: 'proxima-nova', sans-serif;
 }
 
-.highlight{
-    font-size: 36px;
-}
+
 
 @media (max-width: 768px) {
     .wrapper {
