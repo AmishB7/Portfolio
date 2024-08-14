@@ -275,11 +275,12 @@ export default {
         width: 10px;
         margin-right: 5px;
     }
-    .about-me {
-        text-align: center;
+
+    .highlight{
+        font-size: 17.9px;
     }
     .about-me h1 {
-        font-size: 16px; 
+        font-size: 15px; 
     }
 
     .about-me p {
@@ -305,8 +306,6 @@ export default {
     .projects-button a{
         font-size: 6px;
     }
-    .highlight{
-        font-size: 20px;
-    }
+  
 }
 </style>
