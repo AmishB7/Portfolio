@@ -277,7 +277,7 @@ export default {
     }
 
     .highlight{
-        font-size: 24px;
+        font-size: 18px;
     }
     .about-me h1 {
         font-size: 15px; 
