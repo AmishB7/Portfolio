@@ -6,7 +6,7 @@
         </router-link></button>
     
     <h1>My Projects : </h1>
-    <div class="main-container">
+    <!-- <div class="main-container">
         <div class="project-card" v-for="(items,index) in projectData.projects" v-bind:key="items">
         <h2>{{projectData.projects[index].name}}</h2>
         <p>{{projectData.projects[index].description}}</p>
@@ -14,22 +14,23 @@
         
 
     </div>
-    </div>
+    </div> -->
+    <p>In Progress.....</p>
     
 </template>
 <script>
-import jsonData from '../../projects.json'
-export default{
-    data(){
-        return{
-            projectData: jsonData
-        }
-    }
-}
+// import jsonData from '../../projects.json'
+// export default{
+//     data(){
+//         return{
+//             projectData: jsonData
+//         }
+//     }
+// }
 </script>
 
 <style scoped>
-.main-container{
+/* .main-container{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,12 +52,10 @@ export default{
 .link img{
     height: 1.5rem;
     margin: 5px;
-}
+} */
 
 .back{
     display: flex;
-    justify-content:left;
-    align-items: left;
     margin: 10px;
     padding: 10px;
     flex-wrap: 40%;
@@ -64,9 +63,19 @@ export default{
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-button{
-    text-decoration: none;
+p{
+    color: white;
 }
+a{
+    text-decoration: none;
+    color: white
+}
+a:hover{
+    color: #224a33;
+}
+/* button{
+    text-decoration: none;
+} */
 
 
 </style>
