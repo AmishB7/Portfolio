@@ -223,11 +223,13 @@ export default {
     border-radius: 15px;
     padding: 5px;
     margin: 5px;
+    
 
 }
 .projects-button a{
     text-decoration: none;
-    color: #ECF0F1
+    color: #ECF0F1;
+    font-family: 'proxima-nova', sans-serif;
 }
 
 .highlight{
