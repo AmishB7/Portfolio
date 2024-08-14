@@ -277,19 +277,17 @@ export default {
     }
 
     .highlight{
-        font-size: 19px;
-        text-align: left;
+        font-size: 22px;
+
     }
     .about-me h1 {
-        font-size: 13px; 
+        padding-top: 5px;
+        font-size: 18px; 
     }
 
     .about-me p {
         font-size: 9px; 
-    }
-
-    .about-me{
-        text-align: center;
+        
     }
 
     .link {
