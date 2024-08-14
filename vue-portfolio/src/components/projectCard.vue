@@ -1,4 +1,10 @@
 <template>
+
+    <button class="back">
+        <router-link to="/">About Me
+
+        </router-link></button>
+    
     <h1>My Projects : </h1>
     <div class="main-container">
         <div class="project-card" v-for="(items,index) in projectData.projects" v-bind:key="items">
@@ -46,4 +52,21 @@ export default{
     height: 1.5rem;
     margin: 5px;
 }
+
+.back{
+    display: flex;
+    justify-content:left;
+    align-items: left;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: 40%;
+    background-color: #3BBA9C;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+button{
+    text-decoration: none;
+}
+
+
 </style>
