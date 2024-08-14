@@ -240,9 +240,14 @@ export default {
 }
 
 @media (max-width: 768px) {
+    .wrapper {
+        padding: 0;
+    }
     .main-container {
         flex-direction: row;
+        width: 100%;
     } 
+    
     .profile img {
         height: 50px;
         width: 50px;
@@ -261,7 +266,7 @@ export default {
         font-size: 9px;
     }
     .navbar a {
-        font-size: 10px; 
+        font-size: 8px; 
     }
     
     .navbar img{
@@ -283,8 +288,9 @@ export default {
     .link {
         margin: 0 5px;
     }
+    
     .link img{
-        height: 5px;
+        height: 10px;
 
     }
     
