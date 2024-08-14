@@ -33,7 +33,7 @@ export default {
             <div class="social-links">
                     <div class="link">
                         
-                        <a href="https://github.com/AmishB7" target="_blank"><img src="../assets/Github.png" alt="Github"></a>
+                        <a href="https://github.com/AmishB7" target="_blank"><img src="../assets/GitHub.png" alt="Github"></a>
                         
                     </div>
                     <div class="link">
