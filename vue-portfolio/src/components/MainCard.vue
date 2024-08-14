@@ -24,7 +24,7 @@ export default {
                     <router-link to="/"><img src="../assets/person.png" alt="About Me">About Me</router-link>
                 <router-link to="/projects"><img src="../assets/project.png" alt="Experiencce">Projects</router-link>
                 <router-link to="/experience"><img src="../assets/experience.png" alt="About Me">Experience</router-link>
-                <router-link to="/skills"><img src="../assets/Skills.png" alt="">Skills</router-link>
+                <router-link to="/skills"><img src="../assets/skills.png" alt="">Skills</router-link>
                 
             
                 
