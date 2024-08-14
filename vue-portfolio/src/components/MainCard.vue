@@ -17,37 +17,47 @@ export default {
             <div class="profile">
                 <img src="../assets/profile.jpg" alt="Profile-image">
                 <h3>Amish Bajracharya</h3>
-                <p>Contact Me</p>
+                <p>Software Developer</p>
+                <p>Nepal</p>
+            </div>
+            <div class="navbar">
+                    <router-link to="/"><img src="../assets/person.png" alt="About Me">About Me</router-link>
+                <router-link to="/projects"><img src="../assets/project.png" alt="Experiencce">Projects</router-link>
+                <router-link to="/experience"><img src="../assets/experience.png" alt="About Me">Experience</router-link>
+                <router-link to="/skills"><img src="../assets/Skills.png" alt="">Skills</router-link>
+                
+            
+                
+
             </div>
             <div class="social-links">
-                <a href="">
                     <div class="link">
                         
-                        <a href="https://github.com/AmishB7" target="_blank"><img src="../assets/Github.png" alt=""><h2>Github</h2></a>
+                        <a href="https://github.com/AmishB7" target="_blank"><img src="../assets/Github.png" alt="Github"></a>
                         
                     </div>
                     <div class="link">
                         
-                        <a href="https://www.linkedin.com/in/amish-bajracharya-349625286/" target="_blank"><img src="../assets/linkedin.png" alt=""><h2>Linkedin</h2></a>
+                        <a href="https://www.linkedin.com/in/amish-bajracharya-349625286/" target="_blank"><img src="../assets/linkedin.png" alt="Linkedin"></a>
                     </div>
                     <div class="link">
                         
-                        <a href="https://www.facebook.com/amish.shakyaa/" target="_blank"><img src="../assets/facebook.png" alt=""><h2>Facebook</h2></a>
+                        <a href="https://www.facebook.com/amish.shakyaa/" target="_blank"><img src="../assets/facebook.png" alt="Facebook"></a>
                     </div>
                     <div class="link">
                         
-                        <a href="mailto:amishbs43@gmail.com" target="_blank"><img src="../assets/gmail.jpg" alt=""><h2>Email</h2></a>
+                        <a href="mailto:amishbs43@gmail.com" target="_blank"><img src="../assets/gmail.jpg" alt="Gmail"></a>
                     </div>
-                </a>
+                
             </div>
         </div>
         <div class="container-two">
             <div class="about-me">
-                <h1> <div class="highlight">Hello! I am Amish,</div>a software developer
+                <h1> <div class="highlight">Hello! I'm Amish,</div>a software developer
                     
                      
                 </h1>
-                <p>I am currently working at BeamLab with Node.js  
+                <p>Currently working at BeamLab with Node.js  
                     and Vue.js. 
                     I am interested in creating full stack web applications. </p>
                 <p>I can help you solve a problem or build a product, website.</p>
@@ -59,13 +69,8 @@ export default {
             </div>
             <div class="button-container">
                 <button class="projects-button">
-                    <router-link to="/projects">
-                        <h2>My Projects</h2>
-                    </router-link>
-                </button>
-                <button class="projects-button">
-                    <a href="">
-                        <h2>See my Resume</h2>
+                    <a href="https://drive.google.com/file/d/1nqjh2xEeUPxg5gZsCUF5YZ0k8VfdJDJy/view?usp=sharing" target="_blank">
+                        <h2>See My Resume</h2>
                     </a>
                 </button>
             </div>
@@ -96,6 +101,12 @@ export default {
     padding: 2.5%;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    color: #2c3e50;
+    font-size: 20px;
+    font-weight: bold;
+}
+.profile h3{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .profile img{
     height: 200px;
@@ -103,19 +114,47 @@ export default {
     border-radius: 50%;
 }
 .profile p{
-    color: #2c3e50;
-    font-size: 20px;
-    font-weight: bold;
-    padding-top: 20px;
+    color: #314253;
+    font-size: 15px;
+    margin-top: -10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
 }
 
+.navbar a {
+    color: #224a33;
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #18BC9C;
+}
+.navbar img{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.navbar a:hover img {
+    transform: scale(1.2); 
+    filter: brightness(1.4); 
+}
 .about-me h1{
     font-size: 30px;
     --bg-size: 300%;
   /* Other */
   --color-one: #18BC9C;
-  --color-two: #189ebc;
-  --color-three: #0cecce;
+  --color-two: #18a9bc;
+  --color-three: #ecb40c;
   background: linear-gradient(
       90deg,
       var(--color-one),
@@ -128,6 +167,7 @@ export default {
   -webkit-background-clip: text;
   background-clip: text;
   animation: move-bg 15s infinite linear;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 @keyframes move-bg {
@@ -138,20 +178,29 @@ export default {
 .about-me p{
     color: #EDEADE;
     font-size: 20px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .mail a{
     text-decoration: none;
     color: #3BA9AC;
 }
-.link a{
-    text-decoration: none;
-    color: #2c3e50;
-    font-size: 12px;
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    margin-top: 30px; 
 }
 
+.link {
+    display: inline-flex;
+    align-items: center;
+    margin: 0 10px;
+}
 .link img{
-    height: 2rem;
+    height: 25px;
 }
 .container-two{
     margin: 2.5%;
