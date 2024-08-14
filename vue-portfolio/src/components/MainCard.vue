@@ -145,8 +145,8 @@ export default {
 }
 
 .navbar a:hover img {
-    transform: scale(1.2); 
-    filter: brightness(1.4); 
+    transform: scale(1.1); 
+    filter: brightness(1.3); 
 }
 .about-me h1{
     font-size: 30px;
