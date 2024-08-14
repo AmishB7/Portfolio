@@ -15,7 +15,7 @@ export default {
         <div class="main-container">
         <div class="container-one">
             <div class="profile">
-                <img src="../assets/profile.jpg" alt="Profile-image">
+                <img src="../assets/me.png" alt="Profile-image">
                 <h3>Amish Bajracharya</h3>
                 <p>Software Developer</p>
                 <p>Nepal</p>
