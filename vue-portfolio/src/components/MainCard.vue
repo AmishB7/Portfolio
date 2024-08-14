@@ -85,6 +85,7 @@ export default {
 .wrapper {
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 
 .main-container {
@@ -93,24 +94,27 @@ export default {
     background-color: #2C3E50;
     border-radius: 25px;
     width: 80%;
+    max-width: 1200px;
 }
 
 .container-one {
     background-color: #E1D9D1;
     width: 30%;
-    padding: 2.5%;
+    max-width: 350px;
+    padding: 10px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
     color: #2c3e50;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 .profile h3{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .profile img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
 }
 .profile p{
@@ -130,7 +134,7 @@ export default {
     color: #224a33;
     text-decoration: none;
     padding: 10px 0;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: bolder;
     transition: color 0.3s ease;
 }
@@ -139,8 +143,8 @@ export default {
     color: #18BC9C;
 }
 .navbar img{
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     margin-right: 10px;
 }
 
@@ -149,7 +153,7 @@ export default {
     filter: brightness(1.3); 
 }
 .about-me h1{
-    font-size: 30px;
+    font-size: 26px;
     --bg-size: 300%;
   /* Other */
   --color-one: #18BC9C;
@@ -177,7 +181,7 @@ export default {
 
 .about-me p{
     color: #EDEADE;
-    font-size: 20px;
+    font-size: 16px;
     font-family: proxima-nova, sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -200,7 +204,7 @@ export default {
     margin: 0 10px;
 }
 .link img{
-    height: 25px;
+    height: 20px;
 }
 .container-two{
     margin: 2.5%;
@@ -213,7 +217,7 @@ export default {
     height: 2.5rem;
 }
 .button-container{
-    margin-top: 5%;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -221,8 +225,7 @@ export default {
 .projects-button{
     background-color: #18BC9C;
     border-radius: 15px;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
     
 
 }
@@ -233,7 +236,70 @@ export default {
 }
 
 .highlight{
-    font-size: 50px;
+    font-size: 36px;
 }
 
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: row;
+    } 
+    .profile img {
+        height: 50px;
+        width: 50px;
+    }
+    .container-one {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+    .profile p{
+        margin-top: 2px;
+        font-size: 8px;
+    }
+    .profile h3{
+        font-size: 9px;
+    }
+    .navbar a {
+        font-size: 10px; 
+    }
+    
+    .navbar img{
+        height: 10px;
+        width: 10px;
+        margin-right: 5px;
+    }
+    .about-me {
+        text-align: center;
+    }
+    .about-me h1 {
+        font-size: 16px; 
+    }
+
+    .about-me p {
+        font-size: 9px; 
+    }
+
+    .link {
+        margin: 0 5px;
+    }
+    .link img{
+        height: 5px;
+
+    }
+    
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .projects-button a{
+        font-size: 6px;
+    }
+    .highlight{
+        font-size: 20px;
+    }
+}
 </style>
