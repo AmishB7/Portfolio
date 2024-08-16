@@ -93,7 +93,7 @@ export default {
     flex-direction: row;
     background-color: #2C3E50;
     border-radius: 25px;
-    width: 80%;
+    width: 60%;
     max-width: 1200px;
 }
 
@@ -116,12 +116,12 @@ export default {
     height: 150px;
     width: 150px;
     border-radius: 50%;
+    margin-top: 20px;
 }
 .profile p{
     color: #314253;
     font-size: 15px;
     margin-top: -10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .navbar {
     display: flex;
@@ -134,7 +134,7 @@ export default {
     color: #224a33;
     text-decoration: none;
     padding: 10px 0;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bolder;
     transition: color 0.3s ease;
 }
@@ -143,8 +143,8 @@ export default {
     color: #18BC9C;
 }
 .navbar img{
-    height: 18px;
-    width: 18px;
+    height: 16px;
+    width: 16px;
     margin-right: 10px;
 }
 
@@ -153,10 +153,10 @@ export default {
     filter: brightness(1.3); 
 }
 .highlight{
-    font-size: 40px;
+    font-size: 45px;
 }
 .about-me h1{
-    font-size: 35px;
+    font-size: 40px;
     --bg-size: 300%;
   /* Other */
   --color-one: #18BC9C;
@@ -174,7 +174,7 @@ export default {
   -webkit-background-clip: text;
   background-clip: text;
   animation: move-bg 15s infinite linear;
-  font-family: 'Courier New', Courier, monospace;
+
 }
 
 @keyframes move-bg {
@@ -184,8 +184,8 @@ export default {
 
 .about-me p{
     color: #EDEADE;
-    font-size: 18px;
-    font-family: proxima-nova, sans-serif;
+    font-size: 20px;
+    font-family: 'Merriweather', serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -220,7 +220,7 @@ export default {
     height: 2.5rem;
 }
 .button-container{
-    margin-top: 20px;
+    margin-top: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -228,14 +228,19 @@ export default {
 .projects-button{
     background-color: #18BC9C;
     border-radius: 15px;
-    padding: 10px;
-    
-
+    transition: color 0.3s ease;
 }
 .projects-button a{
     text-decoration: none;
     color: #ECF0F1;
-    font-family: 'proxima-nova', sans-serif;
+    font-size: 12px;
+    
+    
+    
+}
+
+.projects-button a:hover{
+    color: #2C3E50;
 }
 
 
@@ -250,8 +255,8 @@ export default {
     } 
     
     .profile img {
-        height: 50px;
-        width: 50px;
+        height: 80px;
+        width: 80px;
     }
     .container-one {
         border-top-left-radius: 0;
@@ -259,34 +264,37 @@ export default {
         border-top-right-radius: 25px;
         border-bottom-right-radius: 25px;
     }
+    .profile h3{
+        font-size: 12px;
+    }
     .profile p{
         margin-top: 2px;
-        font-size: 8px;
+        font-size: 10px;
     }
-    .profile h3{
-        font-size: 9px;
+    .navbar {
+        margin-top: 5px;
     }
     .navbar a {
-        font-size: 8px; 
+        font-size: 10px; 
     }
     
     .navbar img{
-        height: 10px;
-        width: 10px;
+        height: 12px;
+        width: 12px;
         margin-right: 5px;
     }
 
     .highlight{
-        font-size: 22px;
+        font-size: 25px;
 
     }
     .about-me h1 {
         padding-top: 5px;
-        font-size: 18px; 
+        font-size: 22px; 
     }
 
     .about-me p {
-        font-size: 9px; 
+        font-size: 14px; 
         
     }
 
@@ -303,11 +311,12 @@ export default {
         flex-direction: column;
         align-items: center;
         width: 100%;
+        margin-top: 20px;
     }
 
 
     .projects-button a{
-        font-size: 6px;
+        font-size: 8px;
     }
   
 }
