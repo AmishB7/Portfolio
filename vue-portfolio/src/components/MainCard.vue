@@ -294,7 +294,7 @@ export default {
     }
 
     .about-me p {
-        font-size: 14px; 
+        font-size: 12px; 
         
     }
 
