@@ -49,18 +49,18 @@ export default {
     </nav>
   
     <section id="profile">
-      <div class="section_pic-container">
+      <div class="profile_pic-container">
         <img src='../assets/me.png' alt="profile picture" />
       </div>
       <div class="section_text">
         <p class="section_text_p1">Hello, I'm</p>
         <h1 class="title">Amish Bajracharya</h1>
-        <p class="section_text_p2">Software Developer</p>
+        <p class="section_text_p2">Software Engineer</p>
         <div class="btn-container">
           <button class="btn btn-color-1">
-            <a href="https://drive.google.com/file/d/1nqjh2xEeUPxg5gZsCUF5YZ0k8VfdJDJy/view?usp=sharing" target="_blank">
+            <!-- <a href="https://drive.google.com/file/d/1nqjh2xEeUPxg5gZsCUF5YZ0k8VfdJDJy/view?usp=sharing" target="_blank">
               My Resume
-            </a>
+            </a> -->
           </button>
           <router-link to="/contact">
             <button class="btn btn-color-1">Contact Me</button>
@@ -79,7 +79,7 @@ export default {
         </div>
       </div>
     </section>
-    <!-- <section id="about">
+    <section id="about">
         <p class="section_text_p1">Get To know More</p>
         <h1 class="title">About Me</h1>
         <div class="section-container">
@@ -89,13 +89,25 @@ export default {
             <div class="about-details-container">
                 <div class="about-containers">
                     <div class="details-container">
-                        <img src="" alt="" class="icon">
+                        <img src="../assets/experience.png" alt="Experience icon" class="icon">
                         <h3>Experience</h3>
+                        <p>1 year <br/> Software Engineer</p>
                     </div>
+                    <div class="details-container">
+                      <img src="../assets/education.png" alt="" class="icon">
+                      <h3>Education</h3>
+                      <p>B.Sc.CSIT </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae natus sapiente blanditiis fugiat vitae asperiores culpa, neque error voluptas atque molestias, fugit magnam possimus assumenda aliquid sunt dolorum. Aspernatur, deleniti.
+                  </p>
                 </div>
             </div>
         </div>
-    </section> -->
+        <img src="../assets/arrow.png" alt="Arrow Icon" class="icon arrow" @click = "scrollToProjects()"/>
+    </section>
+    
   </template>
   
 
@@ -232,12 +244,12 @@ section{
     display: flex;
     justify-content: space-around;
     margin: 0 15rem;
-    margin-top: -25px;
+    margin-top: -5px;
     gap: 5rem;
     height: 80vh;
 }
 
-.section_pic-container{
+.profile_pic-container{
     display: flex;
     height: 400px;
     width: 400px;
@@ -275,6 +287,7 @@ section{
 
 .section_text_p1{
     text-align: center; 
+    margin-bottom: -2rem;
    
 }
 
@@ -346,6 +359,63 @@ section{
 .btn-color-1, .btn-color-2:hover{
     background: #18BC9C;
     color: #f1f1f1;
+}
+
+/*ABOUT SECTION*/
+
+#about{
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container{
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers, .about-details-container{
+  display: flex;
+}
+
+.about-pic{
+  border-radius: 2rem;
+}
+
+.arrow{
+  position: absolute;
+  right: -5rem;
+  bottom :2.5rem;
+}
+
+
+.details-container{
+  padding: 1.5rem;
+  flex: 1;
+  background: #455f5a;
+  border-radius: 2rem;
+  border: #18BC9C;
+  border-color: #14a2af;
+  text-align: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section_pic-container {
+  display: flex;
+    height: 350px;
+    width: 800px;
+    margin: auto 0;
+    border-radius: 20%;
+    overflow: hidden;
+
 }
 
 @media (max-width: 1200px) {
