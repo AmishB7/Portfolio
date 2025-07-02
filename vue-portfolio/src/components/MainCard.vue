@@ -1,7 +1,6 @@
 <script>
 import { ViFileTypeNode } from "oh-vue-icons/icons";
 import { addIcons, OhVueIcon } from "oh-vue-icons";
-import router from "@/router";
 
 addIcons(ViFileTypeNode);
 
@@ -105,7 +104,7 @@ export default {
                 </div>
             </div>
         </div>
-        <img src="../assets/arrow.png" alt="Arrow Icon" class="icon arrow" @click = "scrollToProjects()"/>
+        <!-- <img src="../assets/arrow.png" alt="Arrow Icon" class="icon arrow" @click = "scrollToProjects()"/> -->
     </section>
     
   </template>
