@@ -58,9 +58,9 @@ export default {
         <p class="section_text_p2">Software Engineer</p>
         <div class="btn-container">
           <button class="btn btn-color-1">
-            <!-- <a href="https://drive.google.com/file/d/1nqjh2xEeUPxg5gZsCUF5YZ0k8VfdJDJy/view?usp=sharing" target="_blank">
+            <a href="" target="_blank">
               My Resume
-            </a> -->
+            </a>
           </button>
           <router-link to="/contact">
             <button class="btn btn-color-1">Contact Me</button>
