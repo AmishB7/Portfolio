@@ -48,23 +48,15 @@ const Footer = () => {
           {[
             {
               icon: <FaFacebook />,
-              link: "https://www.facebook.com/Amish.Bajracharya.3511041/",
-            },
-            {
-              icon: <FaTwitter />,
-              link: "https://twitter.com/CodingMaster6?s=09",
+              link: "https://www.facebook.com/amish.shakyaa/",
             },
             {
               icon: <FaLinkedin />,
-              link: "https://www.linkedin.com/in/Amish-Bajracharya-553b441a4",
+              link: "https://www.linkedin.com/in/amish-bajracharya-349625286/",
             },
             {
               icon: <FaInstagram />,
-              link: "https://www.instagram.com/coding_.master/",
-            },
-            {
-              icon: <FaYoutube />,
-              link: "https://www.youtube.com/codingmasteryt",
+              link: "https://www.instagram.com/amees._/",
             },
           ].map((item, index) => (
             <a
