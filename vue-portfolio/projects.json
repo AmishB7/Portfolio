@@ -2,10 +2,10 @@
     "projects": [
         {
             "id": 1,
-            "name": "vue-portfolio",
-            "description":"This template should help get you started developing with Vue 3 in Vite.",
+            "name": "amish-portfolio",
+            "description": "My Portfolio",
             "image":"../vue-portfolio/src/assets/Github.png",
-            "link1": "https://github.com/amishbajracharya/vue-portfolio"
+            "link1": "https://github.com/amishbajracharya/portfolio"
         }
     ]
 }

@@ -1,29 +1,48 @@
-# vue-portfolio
+# 🌐 Animated Portfolio Website
 
-This template should help get you started developing with Vue 3 in Vite.
+A sleek and responsive portfolio website built using **React.js** and **Tailwind CSS**.
 
-## Recommended IDE Setup
+## 🚀 Live Demo
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+🔗 [View Portfolio Live](https://amish.com.np)
 
-## Customize configuration
+## 🛠️ Tech Stack
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- ⚛️ React.js
+- 🎨 Tailwind CSS
+- 💾 Vercel(for deployment)
 
-## Project Setup
+## 📁 Features
 
-```sh
+- Responsive design for all screen sizes 📱💻
+- Smooth scroll and animation effects ✨
+- Clean and modular React components 🧩
+- Easy to customize with Tailwind utility classes 🎯
+- Professional sections: About, Skills, Projects, Contact, etc. 👨‍💻
+
+## 🧑‍💻 How to Use
+
+### 1. Clone the Repo
+
+```bash
+git clone
+cd your-repo-name
+```
+
+### 2. Install Dependencies
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 3. Run the App
 
-```sh
-npm run dev
+```bash
+npm start
 ```
 
-### Compile and Minify for Production
+### 4. Build for Production
 
-```sh
+```bash
 npm run build
 ```
