@@ -4,21 +4,13 @@ A sleek and responsive portfolio website built using **React.js** and **Tailwind
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio Live](https://amish.com.np)
+🔗 [View Portfolio Live](https://amishb.com.np)
 
 ## 🛠️ Tech Stack
 
 - ⚛️ React.js
 - 🎨 Tailwind CSS
 - 💾 Vercel(for deployment)
-
-## 📁 Features
-
-- Responsive design for all screen sizes 📱💻
-- Smooth scroll and animation effects ✨
-- Clean and modular React components 🧩
-- Easy to customize with Tailwind utility classes 🎯
-- Professional sections: About, Skills, Projects, Contact, etc. 👨‍💻
 
 ## 🧑‍💻 How to Use
 
