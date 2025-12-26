@@ -41,7 +41,7 @@ import gharbikriLogo from "./assets/work_logo/gharbikri.png";
 import sajhakhabarLogo from "./assets/work_logo/sajhakhabar.png";
 import movieBookingLogo from "./assets/work_logo/movieBooking.png";
 import liveGuardLogo from "./assets/work_logo/liveGuard.png";
-import chatcommerceLogo from "./assets/work_logo/chat_commerce.png";
+import chatPlatformLogo from "./assets/work_logo/chat_commerce.png";
 import tasklyticsLogo from "./assets/work_logo/tlm_plus.png";
 
 export const SkillsInfo = [
@@ -200,17 +200,17 @@ export const projects = [
   },
   {
     id: 3,
-    title: "ChatCommerce-Backend",
+    title: "ChatPlatform-Backend",
     description:
-      "A Node.js-based backend application that provides a chat feature for customers to communicate with sellers using multiple social media platforms in a single platform.",
-    image: chatcommerceLogo,
+      "A Node.js-based backend application that provides a chat feature for businesses to communicate with customers across all social media in a single platform.",
+    image: chatPlatformLogo,
     tags: ["React JS", "Node.js", "Socket.io", "MySQL"],
-    github: "https://github.com/AmishB7/ChatCommerce-Backend",
+    github: "https://github.com/AmishB7/ChatPlatform-Backend",
     webapp: "",
   },
   {
     id: 4,
-    title: "LiveGuard : Property Security Management System",
+    title: "Property Security Management System",
     description: "A Mobile Application for Property Security Management System",
     image: liveGuardLogo,
     tags: ["Node JS", "Firebase", "MySQL"],
