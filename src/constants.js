@@ -35,6 +35,7 @@ import beamlabLogo from "./assets/company_logo/beamlab_logo.png";
 // Education Section Logo's
 import uniglobeLogo from "./assets/education_logo/uniglobe_logo.png";
 import primeLogo from "./assets/education_logo/prime_logo.png";
+import lbefLogo from "./assets/education_logo/lbef_logo.png";
 
 // Project Section Logo's
 import gharbikriLogo from "./assets/work_logo/gharbikri.png";
@@ -42,7 +43,7 @@ import sajhakhabarLogo from "./assets/work_logo/sajhakhabar.png";
 import movieBookingLogo from "./assets/work_logo/movieBooking.png";
 import liveGuardLogo from "./assets/work_logo/liveGuard.png";
 import chatPlatformLogo from "./assets/work_logo/chat_commerce.png";
-import tasklyticsLogo from "./assets/work_logo/tlm_plus.png";
+import ippLogo from "./assets/work_logo/ipp.logo.png";
 
 export const SkillsInfo = [
   {
@@ -135,19 +136,28 @@ export const experiences = [
 export const education = [
   {
     id: 0,
+    img: lbefLogo,
+    school:
+      "LBEF College (Asian Pacific University of Technology & Innovation) | Kathmandu, Nepal)",
+    date: "Feb 2026 - Present",
+    degree: "Master in Information Technology Management - MSc. ITM",
+  },
+  {
+    id: 1,
     img: primeLogo,
-    school: "Prime College, Kathmandu",
-    date: "April 2021 - June 2025",
-    grade: "75%",
+    school: "Prime College (Tribhuvan University) | Kathmandu, Nepal",
+    date: "Nov 2020 - Nov 2024",
+    grade: "72%",
     degree:
       "Bachelor in Computer Science and Information Technology - BSc. CSIT",
   },
   {
-    id: 1,
+    id: 2,
     img: uniglobeLogo,
-    school: "Uniglobe Secondary School, Kathmandu",
-    date: "Sept 2018 - Sept 2020",
+    school: "Uniglobe Secondary School | Kathmandu, Nepal",
+    date: "July 2018 - Aug 2020",
     grade: "3.18 CGPA",
+    degree: "Higher Secondary Certificate - HSC",
   },
 ];
 
@@ -219,12 +229,22 @@ export const projects = [
   },
   {
     id: 5,
-    title: "Tasklytics – Video-Based Performance Tracking ",
+    title: " Impact Partnership Platform",
     description:
-      "A mobile application where organizations define tasks and procedures, and employees upload timestamped videos of task execution to track performance, efficiency, and step-by-step metrics.",
-    image: tasklyticsLogo,
-    tags: ["Node JS", "MySQL", "Sequelize", "Express JS"],
+      "Developed APIs and backend system for Impact Partnership Platform(IPP). IPP is an organization and digital platform, primarily based in Thailand, designed to bridge the gap between business operations and social impact. ",
+    image: ippLogo,
+    tags: [
+      "Node JS",
+      "MySQL",
+      "Sequelize",
+      "Express JS",
+      "Vue JS",
+      "Vuetify",
+      "Nuxt JS",
+      "OAuth 2.0",
+      "Google APIs",
+    ],
     github: "",
-    webapp: "",
+    webapp: "https://portal.impactpartnership.asia",
   },
 ];
