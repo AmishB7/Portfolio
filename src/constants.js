@@ -3,6 +3,7 @@ import sassLogo from "./assets/tech_logo/sass.png";
 import javascriptLogo from "./assets/tech_logo/javascript.png";
 import reactjsLogo from "./assets/tech_logo/reactjs.png";
 import reduxLogo from "./assets/tech_logo/redux.png";
+import vuejsLogo from "./assets/tech_logo/vuejs.png";
 import nextjsLogo from "./assets/tech_logo/nextjs.png";
 import tailwindcssLogo from "./assets/tech_logo/tailwindcss.png";
 import materialuiLogo from "./assets/tech_logo/materialui.png";
@@ -15,19 +16,18 @@ import firebaseLogo from "./assets/tech_logo/firebase.png";
 import cLogo from "./assets/tech_logo/c.png";
 import cppLogo from "./assets/tech_logo/cpp.png";
 import javaLogo from "./assets/tech_logo/java.png";
-import pythonLogo from "./assets/tech_logo/python.png";
 import typescriptLogo from "./assets/tech_logo/typescript.png";
 import gitLogo from "./assets/tech_logo/git.png";
 import githubLogo from "./assets/tech_logo/github.png";
 import vscodeLogo from "./assets/tech_logo/vscode.png";
 import postmanLogo from "./assets/tech_logo/postman.png";
 import mcLogo from "./assets/tech_logo/mc.png";
-import figmaLogo from "./assets/tech_logo/figma.png";
 import netlifyLogo from "./assets/tech_logo/netlify.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 import postgreLogo from "./assets/tech_logo/postgre.png";
 import awsLogo from "./assets/tech_logo/aws.svg";
 import socketLogo from "./assets/tech_logo/socket.png";
+import sequelizeLogo from "./assets/tech_logo/sequelize.png";
 
 // Experience Section Logo's
 import beamlabLogo from "./assets/company_logo/beamlab_logo.png";
@@ -51,6 +51,7 @@ export const SkillsInfo = [
     skills: [
       { name: "Node JS", logo: nodejsLogo },
       { name: "Express JS", logo: expressjsLogo },
+      { name: "Sequelize", logo: sequelizeLogo },
       { name: "MySQL", logo: mysqlLogo },
       { name: "MongoDB", logo: mongodbLogo },
       { name: "Firebase", logo: firebaseLogo },
@@ -61,15 +62,14 @@ export const SkillsInfo = [
   {
     title: "Frontend",
     skills: [
-      { name: "SASS", logo: sassLogo },
-      { name: "JavaScript", logo: javascriptLogo },
       { name: "React JS", logo: reactjsLogo },
+      { name: "SASS", logo: sassLogo },
+      { name: "Vue JS", logo: vuejsLogo },
       { name: "Redux", logo: reduxLogo },
       { name: "Next JS", logo: nextjsLogo },
       { name: "Tailwind CSS", logo: tailwindcssLogo },
       { name: "Material UI", logo: materialuiLogo },
       { name: "Bootstrap", logo: bootstrapLogo },
-      { name: "Figma", logo: figmaLogo },
     ],
   },
   {
@@ -78,7 +78,6 @@ export const SkillsInfo = [
       { name: "C", logo: cLogo },
       { name: "C++", logo: cppLogo },
       { name: "Java", logo: javaLogo },
-      { name: "Python", logo: pythonLogo },
       { name: "JavaScript", logo: javascriptLogo },
       { name: "TypeScript", logo: typescriptLogo },
     ],
@@ -107,12 +106,12 @@ export const experiences = [
     date: "Jul 2024 - Present",
     desc: "Developed dynamic and scalable software applications mostly using Node.js, Express.js with sequelize ORM and MySQL, handling backend development. Collaborated with cross-functional teams to implement RESTful APIs, and optimize application performance in an agile environment.",
     skills: [
-      "React JS",
+      "Vue JS",
       "Node JS",
-      "MongoDb",
       "Express JS",
       "Sequelize",
       "MySQL",
+      "MongoDb",
       "PostgreSQL",
       "Socket.io",
       "Cloud Functions",

@@ -4,7 +4,7 @@
             "id": 1,
             "name": "amish-portfolio",
             "description": "My Portfolio",
-            "image":"../vue-portfolio/src/assets/Github.png",
+            "image":"../portfolio/src/assets/Github.png",
             "link1": "https://github.com/amishbajracharya/portfolio"
         }
     ]
